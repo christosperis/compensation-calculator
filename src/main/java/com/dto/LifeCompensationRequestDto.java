@@ -19,6 +19,9 @@ public class LifeCompensationRequestDto {
     @Positive
     private Double insuredValue;
 
+    public LifeCompensationRequestDto() {
+    }
+
     public Integer getSecuredAge() {
         return securedAge;
     }

@@ -1,5 +1,7 @@
 package com.dto;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import java.time.Instant;
@@ -11,11 +13,15 @@ public class VehicleCompensationRequestDto {
     private Integer bonusMalus;
 
     @NotNull
-    private Instant firstRegistrationYear;
+    @Min(1950)
+    private Integer firstRegistrationYear;
 
     @NotNull
     @Positive
     private Double vehicleValue;
+
+    public VehicleCompensationRequestDto() {
+    }
 
     public Integer getBonusMalus() {
         return bonusMalus;
@@ -25,11 +31,11 @@ public class VehicleCompensationRequestDto {
         this.bonusMalus = bonusMalus;
     }
 
-    public Instant getFirstRegistrationYear() {
+    public Integer getFirstRegistrationYear() {
         return firstRegistrationYear;
     }
 
-    public void setFirstRegistrationYear(Instant firstRegistrationYear) {
+    public void setFirstRegistrationYear(Integer firstRegistrationYear) {
         this.firstRegistrationYear = firstRegistrationYear;
     }
 

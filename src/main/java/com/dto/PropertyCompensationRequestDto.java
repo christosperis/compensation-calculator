@@ -13,6 +13,9 @@ public class PropertyCompensationRequestDto {
     @Positive
     private Double objectiveValue;
 
+    public PropertyCompensationRequestDto() {
+    }
+
     public Instant getConstructionYear() {
         return constructionYear;
     }
