@@ -15,17 +15,17 @@ public class Calculator implements CompensationFormula {
 
     @Override
     public CompensationResponseDto calculateVehicleCompensation(VehicleCompensationRequestDto vehicleCompensationRequestDto) {
-        return new CompensationResponseDto(8500L, 500.41);
+        return new CompensationResponseDto(8500.00, 500.41);
     }
 
     @Override
     public CompensationResponseDto calculatePropertyCompensation(PropertyCompensationRequestDto propertyCompensationRequestDto) {
-        return new CompensationResponseDto(9500L, 52.11);
+        return new CompensationResponseDto(9500.00, 52.11);
     }
 
     @Override
     public CompensationResponseDto calculateLifeCompensation(LifeCompensationRequestDto lifeCompensationRequestDto) {
-        return new CompensationResponseDto(10000L, 10.50);
+        return new CompensationResponseDto(10000.11, 10.50);
     }
 
 }

@@ -2,20 +2,20 @@ package com.dto;
 
 public class CompensationResponseDto {
 
-    private Long compensation;
+    private Double compensation;
 
     private Double premiumAmount;
 
-    public CompensationResponseDto(Long compensation, Double premiumAmount) {
+    public CompensationResponseDto(Double compensation, Double premiumAmount) {
         this.compensation = compensation;
         this.premiumAmount = premiumAmount;
     }
 
-    public Long getCompensation() {
+    public Double getCompensation() {
         return compensation;
     }
 
-    public void setCompensation(Long compensation) {
+    public void setCompensation(Double compensation) {
         this.compensation = compensation;
     }
 

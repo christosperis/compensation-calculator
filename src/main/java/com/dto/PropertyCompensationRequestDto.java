@@ -2,12 +2,13 @@ package com.dto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
-import java.time.Instant;
+
 
 public class PropertyCompensationRequestDto {
 
     @NotNull
-    private Instant constructionYear;
+    @Positive
+    private Integer constructionYear;
 
     @NotNull
     @Positive
@@ -16,11 +17,11 @@ public class PropertyCompensationRequestDto {
     public PropertyCompensationRequestDto() {
     }
 
-    public Instant getConstructionYear() {
+    public Integer getConstructionYear() {
         return constructionYear;
     }
 
-    public void setConstructionYear(Instant constructionYear) {
+    public void setConstructionYear(Integer constructionYear) {
         this.constructionYear = constructionYear;
     }
 
