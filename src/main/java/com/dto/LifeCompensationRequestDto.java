@@ -9,7 +9,6 @@ public class LifeCompensationRequestDto {
 
     @NotNull
     @Min(1)
-    @Max(85)
     private Integer securedAge;
 
     @NotNull
