@@ -1,4 +1,4 @@
-# compensation_calculator
+# compensation-calculator
 
 Suggested solution for EE's Spring Boot Assignment
 
