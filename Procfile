@@ -1,0 +1,1 @@
+web java -Dserver.port=8085 $JAVA_OPTS -jar target/compensation_calculator-1.0-SNAPSHOT.jar
